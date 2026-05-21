@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  min-height: 100vh;
+  color: white;
+}
+
+.weather-card {
+  width: 350px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.search-box {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.search-btn,
+.location-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.search-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.location-btn {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.search-btn:hover,
+.location-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.weather-icon {
+  width: 120px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+
+  0%,100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+}
+
+@keyframes glowText {
+  0% {
+    filter: drop-shadow(0 0 5px #38bdf8);
+  }
+  50% {
+    filter: drop-shadow(0 0 18px #8b5cf6);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #38bdf8);
+  }
+}
+
+.glow-date {
+  animation: glowText 3s ease-in-out infinite;
+}

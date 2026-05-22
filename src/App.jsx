@@ -5,6 +5,10 @@ import UVIndexCard from "./components/UVIndexCard";
 import { getWeather, getWeatherByCoords, getForecast, } from "./services/weatherApi";
 import Forecast from "./components/Forecast";
 import { useEffect} from "react";
+import HourlyForecast from "./components/HourlyForecast";
+import SunriseSunset from "./components/SunriseSunset";
+import WeatherStats from "./components/WeatherStats";
+import AirQuality from "./components/AirQuality";
 
 
 function App() {
@@ -174,6 +178,7 @@ function App() {
     <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
     <div className="relative z-10 flex flex-col items-center min-h-screen p-4">
+
 
       {/* all your content */}
       <div className="text-center mb-10">
@@ -413,12 +418,19 @@ function App() {
           {/* MAIN WEATHER CARD */}
           <WeatherCard weather={weather} />
 
-          <UVIndexCard uv={6} />
+          
+          
 
+          <WeatherStats weather={weather} />
+          <AirQuality />
+                    <UVIndexCard uv={6} />
+
+          <HourlyForecast forecast={forecast} />
           {/* FORECAST */}
           <div className="w-full mt-6">
             <Forecast forecast={forecast} />
           </div>
+          <SunriseSunset weather={weather} />
 
         </div>
       )}

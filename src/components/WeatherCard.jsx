@@ -24,7 +24,7 @@ function WeatherCard({ weather }) {
         {weather.weather[0].description}
       </p>
 
-      <div className="grid grid-cols-3 gap-4 mt-8">
+      {/* <div className="grid grid-cols-3 gap-4 mt-8">
 
         <div className="bg-white/10 rounded-2xl p-4">
           <p className="text-gray-300">
@@ -66,7 +66,7 @@ function WeatherCard({ weather }) {
           </div>
           
 
-      </div>
+      </div> */}
     </div>
   );
 }

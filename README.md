@@ -1,20 +1,32 @@
-<<<<<<< HEAD
-# React + Vite
+# SkyCast - Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Weather Application built using React.js, Tailwind CSS, and OpenWeather API.
 
-Currently, two official plugins are available:
+The application allows users to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search weather by city  
+- View real-time weather updates 
+- Check hourly weather forecast
+- Dynamic weather stats  
+- Monitor air quality index (AQI)
+- View sunrise & sunset timings
+- Explore weather statistics like humidity, wind speed, pressure, and visibility
+- Live digital clock
+- Dynamic greeting message
+  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+### **Frontend**
+- React
+- Tailwind CSS
+- Vite
+- Axios (API requests)
+- CSS (Custom UI styling)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Weather-App
->>>>>>> 418d493acd6459984a0b4d08fcce734ef22c084a
+### **API**
+- OpenWeather API
+
+---
